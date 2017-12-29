@@ -1,0 +1,157 @@
+﻿body{
+	margin:0;
+	padding:0;
+	background:#ccc;
+}
+.navMed ul {
+	list-style: none;
+	background-color: #444;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.navMed li {
+	color: aquamarine;
+	font-family: Oswald, sans-serif;
+	font-size: 1.2em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 2px solid #888;
+}
+.navMed a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	transition: .3s background-color;
+}
+.navMed a:hover {
+	color: #ac7b93;
+	/*background-color: #ac7b93*/
+}
+.navMed a.active {
+	background-color: white;
+	color: #444;
+	cursor: default;
+}
+.logo {
+	height: 100%;
+	width: 50%;
+	margin: auto;
+}
+.logo img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media screen and (min-width: 860px) {
+	.navMed li {
+		width: 140px;
+		border-bottom: none;
+		height: 50px;
+		font-size: 1.0em;
+		line-height: 50px;
+		display: inline-block;
+	}
+}
+section.module.parallax {
+	height: 500px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+section.module.parallax-1 {
+	background-image: url(imagens/imagemFixa1.jpg);
+}
+section.module.parallax-2 {
+	background-image: url(imagens/winter.jpg);
+}
+
+.container {
+	/*   max-width: 960px; */
+	margin: 0px auto;
+}
+.font_1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: 'Pacifico', cursive;
+	font-size: 45px;
+	text-align: center;
+	color: #999999;
+}
+
+.marg_bottom {
+	margin-bottom:100px;
+}
+
+.font_2 {
+	margin-top: 30px;
+	margin-bottom: 120px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+	text-align: center;
+	color: #999999;
+}
+.icones_3 {
+	margin: 0 auto;
+	display:block;
+}
+.imageTitle {
+	font-family: 'Handlee', cursive;
+	font-size: 35px;
+	text-align:center;
+	margin-top: 20px;
+}
+.imageSubtitle {
+	font-family: 'Handlee', cursive;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom:20px;
+}
+.centralize{
+	text-align:center;
+}
+.plano2 {
+	background-color: #107dac;
+}
+.titulo-plano2 {
+	font-size: 40px;
+	margin-top: 30px;
+	
+}
+.texto-plano2 {
+	margin-top: 30px;
+	font-size: 30px;
+	margin-bottom:30px;
+}
+.letra-plano2 {
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	color:white;
+}
+.plano3 {
+	background-color:white;
+}
+
+.letra-plano3 {
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	color: #999999;
+}
+.plano4 {
+	background-color: #616161;
+}
+
+.letra-plano4 {
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	color: white;
+}
+footer {
+	background-color: #e4f9fd;
+}
+.texto-footer {
+	color:black;
+	font-size:12px;
+}
+

@@ -5,7 +5,7 @@
 }
 .navMed ul {
 	list-style: none;
-	background-color: #444;
+	background-color: #59A869;
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -24,19 +24,20 @@
 	text-decoration: none;
 	transition: .3s background-color;
 }
-.navMed a:hover {
-	color: #ac7b93;
-	/*background-color: #ac7b93*/
-}
-.navMed a.active {
-	background-color: white;
-	color: #444;
-	cursor: default;
-}
+	.navMed a:hover {
+		color: #D6D6D6;
+		/*background-color: #ac7b93*/
+	}
+	.navMed a.active {
+		background-color: #D6D6D6;
+		color: #444;
+		cursor: default;
+	}
 .logo {
 	height: 100%;
 	width: 50%;
 	margin: auto;
+	margin-bottom:30px;
 }
 .logo img {
 	max-width: 100%;
@@ -61,10 +62,10 @@ section.module.parallax {
 	background-size: cover;
 }
 section.module.parallax-1 {
-	background-image: url(imagens/imagemFixa1.jpg);
+	background-image: url(imagens/imagemTop.jpg);
 }
 section.module.parallax-2 {
-	background-image: url(imagens/winter.jpg);
+	background-image: url(imagens/imagemBottom.jpg);
 }
 
 .container {
@@ -72,7 +73,7 @@ section.module.parallax-2 {
 	margin: 0px auto;
 }
 .font_1 {
-	margin-top: 30px;
+	margin-top: 35px;
 	margin-bottom: 30px;
 	font-family: 'Pacifico', cursive;
 	font-size: 45px;
@@ -88,7 +89,7 @@ section.module.parallax-2 {
 	margin-top: 30px;
 	margin-bottom: 120px;
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 	color: #999999;
 }
@@ -104,7 +105,7 @@ section.module.parallax-2 {
 }
 .imageSubtitle {
 	font-family: 'Handlee', cursive;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 	margin-bottom:20px;
 }
@@ -112,7 +113,7 @@ section.module.parallax-2 {
 	text-align:center;
 }
 .plano2 {
-	background-color: #107dac;
+	background-color: #59A869;
 }
 .titulo-plano2 {
 	font-size: 40px;
@@ -140,6 +141,7 @@ section.module.parallax-2 {
 }
 .plano4 {
 	background-color: #616161;
+	/*background-color: #107dac;*/
 }
 
 .letra-plano4 {
@@ -148,10 +150,18 @@ section.module.parallax-2 {
 	color: white;
 }
 footer {
-	background-color: #e4f9fd;
+	background-color: #31403A;
 }
 .texto-footer {
-	color:black;
+	color:white;
 	font-size:12px;
+}
+.img-center {
+	margin: 0 auto;
+	display:block;
+}
+.espacamentoTopBottom{
+	margin-top:100px;
+	margin-bottom:100px;
 }
 

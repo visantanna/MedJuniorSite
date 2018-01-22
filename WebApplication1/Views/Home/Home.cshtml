@@ -1,0 +1,48 @@
+﻿@{
+	ViewBag.Title = "Home";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+</head>
+<body>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators ">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item item active">
+				<a href="@Url.Action("Index", "QuemSomos")">
+					<img class="d-block img-fluid" src="~/Content/Images/Slide1Home.jpg" alt="First slide">
+					<div class="carousel-caption d-none d-md-block">
+						<h3 class="titleCarrousel CarrouselTextColor">Vestibulum</h3>
+						<p class="subtitleCarrousel CarrouselTextColor">Donec luctus eros ac ex faucibus</p>
+					</div>
+				</a>
+			</div>
+			<div class="carousel-item item">
+				<a href="@Url.Action("Index", "QuemSomos")">
+					<img class="d-block img-fluid" src="~/Content/Images/Slide2Home.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block">
+						<h3 class="titleCarrousel CarrouselTextColor">Morbi </h3>
+						<p  class="subtitleCarrousel CarrouselTextColor">sapien vitae cursus dictum</p>
+					</div>
+				</a>
+			</div>
+			<div class="carousel-item item">
+				<a href="@Url.Action("Index", "QuemSomos")">
+					<img class="d-block img-fluid" src="~/Content/Images/Slide3Home.jpg" alt="Third slide">
+					<div class="carousel-caption d-none d-md-block">
+						<h3 class="titleCarrousel CarrouselTextColor">Lorem</h3>
+						<p class="subtitleCarrousel CarrouselTextColor">ipsum dolor sit amet</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<link href="~/App_Themes/Theme1/Home.css" rel="stylesheet">
+</body>
+	
+</html>

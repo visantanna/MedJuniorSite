@@ -1,0 +1,97 @@
+﻿@model WebApplication1.ViewModel.UserCreateModelView
+
+
+@{
+	ViewBag.Title = "Nova Conta";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+@using (Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+	<div class="container" id="containerLogin">
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<h1 class="text-center login-title">Crie sua conta no site da MedJunior</h1>
+				<div class="account-wall">
+					<h4 class="text-center">Novo Usuario</h4><br>
+					<img class="profile-img" src="~/Content/Images/logo_sem_fundo.png"
+						 alt="logo da Medjunior">
+					<div class="form-signin">
+						@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+						<div class="form-group">
+							@Html.LabelFor(model => model.email, htmlAttributes: new { @class = "control-label col-md-12" })
+							<div class="col-md-12">
+								@Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+								@Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+							</div>
+						</div>
+
+						<div class="form-group">
+							@Html.LabelFor(model => model.senha, htmlAttributes: new { @class = "control-label col-md-12" })
+							<div class="col-md-12">
+								@Html.PasswordFor(model => model.senha, htmlAttributes: new { @class = "form-control" })
+								@Html.ValidationMessageFor(model => model.senha, "", new { @class = "text-danger" })
+							</div>
+						</div>
+						<div class="form-group">
+							@Html.LabelFor(model => model.confirmSenha, htmlAttributes: new { @class = "control-label col-md-12" })
+							<div class="col-md-12">
+								@Html.PasswordFor(model => model.confirmSenha, htmlAttributes: new { @class = "form-control" })
+								@Html.ValidationMessageFor(model => model.confirmSenha, "", new { @class = "text-danger" })
+							</div>
+						</div>
+						<div class="form-group">
+							@Html.LabelFor(model => model.nomeCompleto, htmlAttributes: new { @class = "control-label col-md-12" })
+							<div class="col-md-12">
+								@Html.EditorFor(model => model.nomeCompleto, new { htmlAttributes = new { @class = "form-control" } })
+								@Html.ValidationMessageFor(model => model.nomeCompleto, "", new { @class = "text-danger" })
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-1"></div>
+							<div class=" col-md-10">
+								@Html.LabelFor(m => m.faculdade)
+								@Html.EnumDropDownListFor(m => m.faculdade, "Selecione sua Faculdade", htmlAttributes: new { @class = "form-control control-label combobox" })
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3"></div>
+								<div class="col-md-6">
+									@Html.LabelFor(model => model.anoDeIngresso, htmlAttributes: new { @class = "control-label" })
+									@Html.DropDownListFor(model => model.anoDeIngresso, null, htmlAttributes: new { @class = "form-control" })
+								</div>
+								<div class="col-md-3"></div>
+							</div>
+							@Html.ValidationMessageFor(model => model.anoDeIngresso, "", new { @class = "text-danger" })
+						</div>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<button class="btn btn-lg btn-primary col-md-12 " type="submit" , value="Create">
+									Criar
+								</button>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="text-center new-account">Recuperar senha</a>
+			</div>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+	<link href="~/App_Themes/Theme1/Create.css" rel="stylesheet" />
+}
+
+<div>
+	@Html.ActionLink("Back to List", "Index")
+</div>

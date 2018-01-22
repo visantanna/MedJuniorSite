@@ -1,0 +1,31 @@
+﻿.Home {
+	background-color: #D6D6D6;
+	color: #444;
+	cursor: default;
+}
+.carouselExampleIndicators {
+	height: 100%;
+	width: 100%;
+}
+.titleCarrousel {
+	font-size: 45px;
+}
+.subtitleCarrousel {
+	font-size:30px;
+	margin-bottom:300px;
+}
+
+.CarrouselTextColor {
+	color:white;
+}
+
+.item:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.6);
+}

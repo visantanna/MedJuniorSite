@@ -1,0 +1,43 @@
+﻿<html lang="pt-br">
+@model WebApplication1.Models.Entities.Usuario
+<head>
+	@{
+		Layout = "~/Views/Shared/_Layout.cshtml";
+		ViewBag.Title = "Sign In";
+	}
+</head>
+<body>
+	<div class="container" id="containerLogin">
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<h1 class="text-center login-title">Entre com sua conta no site MedJunior</h1>
+				<div class="account-wall">
+					<img class="profile-img" src="~/Content/Images/logo_sem_fundo.png"
+						 alt="logo da Medjunior">
+					<form class="form-signin" name="login">
+						<input type="text" name="email" id="emailField" class="form-control" placeholder="Email" required autofocus>
+
+						<input type="password" name="senha" class="form-control" placeholder="Password" required>
+
+						<button class="btn btn-lg btn-primary btn-block" type="submit">
+							Sign in
+						</button>
+						<label class="checkbox pull-left">
+							<br>
+							<input type="checkbox" value="remember-me">
+							Remember me
+						</label>
+					</form>
+				</div>
+				@Html.ActionLink("Criar uma nova conta", "Create", "Usuarios",null, new {@class = "text-center new-account" })
+			</div>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+	<link href="~/App_Themes/Theme1/SignIn.css" rel="stylesheet" />
+</body>
+
+</html>

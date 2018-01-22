@@ -1,0 +1,134 @@
+﻿
+
+section.module.parallax {
+	height: 500px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+section.module.parallax-1 {
+	background-image: url('../../Content/Images/imagemTop.jpg');
+}
+
+section.module.parallax-2 {
+	background-image: url('../../Content/Images/imagemBottom.jpg');
+}
+
+.container {
+	/*   max-width: 960px; */
+	margin: 0px auto;
+}
+
+.font_1 {
+	margin-top: 35px;
+	margin-bottom: 30px;
+	font-family: 'Pacifico', cursive;
+	font-size: 45px;
+	text-align: center;
+	color: #999999;
+}
+
+.marg_bottom {
+	margin-bottom: 100px;
+}
+
+.font_2 {
+	margin-top: 30px;
+	margin-bottom: 120px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 25px;
+	text-align: center;
+	color: #999999;
+}
+
+.icones_3 {
+	margin: 0 auto;
+	display: block;
+}
+
+.imageTitle {
+	font-family: 'Handlee', cursive;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.imageSubtitle {
+	font-family: 'Handlee', cursive;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.centralize {
+	text-align: center;
+}
+
+.plano2 {
+	background-color: #59A869;
+	margin-bottom: 60px;
+}
+
+.titulo-plano2 {
+	font-size: 40px;
+	margin-top: 30px;
+}
+
+.texto-plano2 {
+	margin-top: 30px;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.letra-plano2 {
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	color: white;
+}
+
+.plano3 {
+	background-color: white;
+}
+
+.letra-plano3 {
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	color: #999999;
+}
+
+.plano4 {
+	background-color: #616161;
+	/*background-color: #107dac;*/
+}
+
+.letra-plano4 {
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	color: white;
+}
+
+footer {
+	background-color: #31403A;
+}
+
+.texto-footer {
+	color: white;
+	font-size: 12px;
+}
+
+.img-center {
+	margin: 0 auto;
+	display: block;
+}
+
+.espacamentoTopBottom {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.navMed a.QuemSomos {
+	background-color: #D6D6D6;
+	color: #444;
+	cursor: default;
+}
